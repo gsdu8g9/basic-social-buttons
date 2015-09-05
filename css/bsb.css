@@ -1,0 +1,46 @@
+.bsb-buttons {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }
+  .bsb-buttons * {
+    box-sizing: border-box !important; }
+  .bsb-buttons li {
+    list-style: none; }
+  .bsb-buttons .bsb-button {
+    float: left;
+    margin-right: 5px;
+    border-radius: 8px; }
+    .bsb-buttons .bsb-button a {
+      padding: 10px;
+      display: block;
+      float: left; }
+    .bsb-buttons .bsb-button .bsb-icon {
+      display: block; }
+      .bsb-buttons .bsb-button .bsb-icon svg {
+        display: block; }
+        .bsb-buttons .bsb-button .bsb-icon svg path, .bsb-buttons .bsb-button .bsb-icon svg polygon {
+          fill: white; }
+    .bsb-buttons .bsb-button .bsb-share-counter {
+      float: left;
+      padding: 10px;
+      padding-left: 0;
+      padding-right: 15px;
+      line-height: 28px;
+      font-size: 20px;
+      color: white; }
+    .bsb-buttons .bsb-button.bsb-facebook {
+      background-color: #306199; }
+    .bsb-buttons .bsb-button.bsb-facebook:hover {
+      background-color: #244872; }
+    .bsb-buttons .bsb-button.bsb-twitter {
+      background-color: #26c4f1; }
+    .bsb-buttons .bsb-button.bsb-twitter:hover {
+      background-color: #0eaad6; }
+    .bsb-buttons .bsb-button.bsb-googleplus {
+      background-color: #e93f2e; }
+    .bsb-buttons .bsb-button.bsb-googleplus:hover {
+      background-color: #ce2616; }
+    .bsb-buttons .bsb-button.bsb-pinterest {
+      background-color: #b81621; }
+    .bsb-buttons .bsb-button.bsb-pinterest:hover {
+      background-color: #8a1119; }
+
+/*# sourceMappingURL=bsb.css.map */

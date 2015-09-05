@@ -1,0 +1,77 @@
+$bsb-facebook:    #306199 !default;
+$bsb-twitter:     #26c4f1 !default;
+$bsb-googleplus:  #e93f2e !default;
+$bsb-pinterest:   #b81621 !default;
+
+$social-list: (
+  bsb-facebook    $bsb-facebook,
+  bsb-twitter     $bsb-twitter,
+  bsb-googleplus  $bsb-googleplus,
+  bsb-pinterest   $bsb-pinterest
+);
+
+.bsb-buttons {
+
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+	* {
+		box-sizing: border-box !important;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	.bsb-button { 
+		float: left;
+		margin-right: 5px;
+		border-radius: 8px;
+		
+		a {
+			padding: 10px;
+			display: block;
+			float: left;
+		}
+
+		.bsb-icon {
+			
+			display: block;
+
+			svg {
+				display: block;
+				path, polygon {
+					fill: white;
+				}
+			}
+         }
+
+         .bsb-share-counter {
+         	float: left;
+         	padding:10px;
+         	padding-left:0;
+         	padding-right: 15px;
+         	line-height: 28px;
+         	font-size: 20px;
+         	color: white;       
+         }
+
+		@each $s-name in $social-list {
+
+	        &.#{nth($s-name, 1)} {
+	        	background-color: nth($s-name, 2);
+	        }
+
+	        &.#{nth($s-name, 1)} {
+	          
+	        	&:hover {
+	        		background-color: darken(nth($s-name, 2), 10%);
+	        	}
+
+	        }
+	    } 
+	}
+}
+
+
+
+
